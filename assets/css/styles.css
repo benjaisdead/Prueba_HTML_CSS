@@ -1,0 +1,164 @@
+/* 0.- Global Styles */
+ul, li, a, p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h1, h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* 1.- Navbar */
+.navbar-default {
+  margin-bottom: 0;
+  background-color: #008ccc;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+}
+.container-fluid .navbar-header {
+  margin: 0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-toggle {
+  margin-top: 13px;
+}
+.navbar-default .navbar-nav li a:focus {
+  color: #fff;
+}
+.navbar-default .navbar-nav li a:hover {
+  color: #fff;
+}
+.navbar-header img {
+  height: 60px;
+  padding: 2px;
+  margin-left: 20px;
+}
+.navbar-default .navbar-nav li a {
+  color: #fff;
+  font-size: 1.1em;
+  padding-top: 20px;
+}
+/* 2.- Landing Page */
+.landing-fundacion {
+  padding: 0;
+  margin-bottom: 50px;
+}
+.carousel-inner {
+  position: relative;
+}
+.carousel-inner-caption {
+  position: absolute;
+}
+.carousel-fundacion-img {
+width: 100%;
+opacity: 0.7;
+min-height: 300px;
+}
+
+.carousel-caption h1 {
+  color: #0061aa;
+  text-shadow: 2px 2px #fff;
+  font-size: 4em;
+}
+.carousel-caption p {
+  color: #fff;
+  font-size: 1.5em;
+}
+.carousel-fundacion-caption {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  top: 50px;
+  bottom: 160px;
+}
+.btn-fundacion {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: #0061aa;
+  border-radius: 2vh;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+}
+/* Media Query Landing page */
+@media (max-width: 700px) {
+  .btn-fundacion {
+    margin-top: 0;
+    margin-bottom: 1vh;
+    background-color: #0061aa;
+    border-radius: 2vh;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    font-size: 0.8em;
+  }
+  .carousel-fundacion-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    top: 5px;
+    bottom: 10px;
+  }
+  .carousel-caption h1 {
+    color: #0061aa;
+    text-shadow: 1px 1px #fff;
+    font-size: 1.6em;
+  }
+  .carousel-caption p {
+    color: #fff;
+    font-size: 1em;
+  }
+ }
+/* Section 2*/
+.thumbnail {
+  width: 200px;
+  height: 200px;
+}
+.features-fundacion {
+  text-align: center;
+}
+.features-fundacion h1 {
+  font-size: 3em;
+  padding: 0;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+.footer-fundacion {
+  background: #0061aa;
+}
+.embed-responsive-item {
+  max-height: 300px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 300px;
+}
+.footer-fundacion-contact ul {
+  list-style: none;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.footer-fundacion-contact ul li {
+  color: #fff;
+  font-size: 1.1em;
+}
+.footer-fundacion-contact ul li span {
+  font-weight: 400;
+}
