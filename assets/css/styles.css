@@ -185,6 +185,7 @@ label {
   background-size: cover;
   background-position: center;
   height: 400px;
+  margin-top: 0;
 }
 .about__inner_bottom h2 {
   color: #0061aa;
@@ -222,4 +223,28 @@ list-style: none;
   .about__inner_background_bottom {
     height: 250px;
   }
+}
+/* Blog Section */
+.blog-container {
+  margin-top: 60px;
+  border-left: 1px solid #CDD4CA;
+  border-right: 1px solid #CDD4CA;
+  text-align: left;
+  padding-bottom: 40px;
+}
+.blog-container h2 {
+  text-align:center;
+}
+.blog-container p span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.blog-container-img {
+  text-align: center;
+}
+.blog-container-img img {
+max-width: 500px;
+display: inline-block;
+padding-top: 20px;
 }
