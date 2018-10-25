@@ -18,7 +18,10 @@ h3 {
   width: 140px;
   border: 4px solid #FF8F44;
   margin-top: 0;
-
+}
+.blog-hover {
+  width: 100%;
+  border-top: 1px solid #CDD4CA;
 }
 /* 1.- Navbar */
 .navbar {
@@ -213,9 +216,12 @@ list-style: none;
     font-size: 1.5em;
     padding-left: 20px;
   }
-
+  .about__inner{
+    margin-top: 0;
+  }
   .about__inner_background {
     height: 250px;
+    margin-top: 60px;
   }
   .about__inner_bottom h2 {
     font-size: 1.5em;
@@ -234,17 +240,49 @@ list-style: none;
 }
 .blog-container h2 {
   text-align:center;
+  color: #0061aa;
 }
 .blog-container p span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
+  color: #0061aa;
+}
+.fa-calendar-alt {
+  color: #FF8F44;
+  font-size: 1.5em;
 }
 .blog-container-img {
   text-align: center;
 }
 .blog-container-img img {
-max-width: 500px;
+width: 500px;
+min-width: 200px;
 display: inline-block;
 padding-top: 20px;
+}
+.icon-container {
+  height: 60px;
+  width: 60px;
+  background-color: #0061aa;
+  border-radius: 50%;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.fa-heart {
+  font-size: 3em;
+  color: #fff;
+  padding-top: 10px;
+}
+.fa-share-alt {
+  font-size: 3em;
+  color: #fff;
+  padding-top: 10px;
+}
+.fa-comment {
+  font-size: 3em;
+  color: #fff;
+  padding-top: 8px;
 }
