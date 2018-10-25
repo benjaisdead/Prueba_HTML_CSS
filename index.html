@@ -20,7 +20,7 @@
 </head>
 <body>
   <!-- 1.- Navbar -->
-  <nav class="navbar navbar-default navbar-fundacion">
+  <nav class="navbar sticky navbar-default navbar-fundacion">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -36,9 +36,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Index</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="news.html">Noticias</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -65,13 +65,6 @@
     <div class="item">
       <img src="assets/img/landing-img-3.jpg" alt="..." class="img-responsive carousel-fundacion-img">
     </div>
-    <div class="carousel-caption carousel-fundacion-caption">
-      <h1>Fundación Niño y Cáncer</h1>
-         <p>Es una entidad sin fines de lucro que nació para ser un importante apoyo en el tratamiento integral de los niños con cáncer o leucemia atendidos en el Sistema Público del país (Plan AUGE y GES) mejorando su calidad de vida y fortaleciendo su integración social y familiar.</p>
-           <button type="button" class="btn-fundacion" data-toggle="button" aria-pressed="false" autocomplete="off">
-              Más Información
-          </button>
-    </div>
   </div>
 
   <!-- Controls -->
@@ -85,57 +78,56 @@
   </a>
 </div>
  </div>
-
-  <!-- 3.- Thumbnails Section -->
-
-  <div class="container-fluid row">
-    <div class="container-fluid features-fundacion">
-        <h1>Noticias</h1>
-    </div>
-
-    <div class="col-sm-6 col-sm-offset-3 col-md-2 col-md-offset-1">
-      <a href="#" class="thumbnail">
+<!-- 3. Thumbnail Section -->
+  <div class="row">
+    <h1>Noticias</h1>
+    <hr class="title-hover">
+    <div class="col-sm-6 col-md-4 col-md-offset-1">
+      <div class="thumbnail">
         <img src="assets/img/features-img-1.jpg" alt="...">
-      </a>
+        <div class="caption">
+          <h2>Haga su donación</h2>
+          <p>Dona tus 7 lucas</p>
+          <p>Todas las sonrisas son gratis, pero algunas cuestan más que otras...</p>
+          <a href="#"><img src="assets/img/webpay.png" alt="" class="img-responsive">
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-      <h2>Haga su donación</h2>
-      <h3>"Click aquí""</h3>
-      <img src="assets/img/webpay.png" alt="">
-    </div>
-    <div class="col-sm-6 col-md-2">
-      <a href="#" class="thumbnail">
+    <div class="col-sm-6 col-md-4 col-md-offset-2">
+      <div class="thumbnail">
         <img src="assets/img/features-img-2.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-sm-6 col-md-3">
-      <h2>Renovación de Unidades de Oncología Infantil</h2>
-        <p>Hospital San Juan de Dios </p>
-        <p>Hospital de Concepción </p>
-        <p>Hospital San Borja Arriarán</p>
+        <div class="caption">
+          <h2>Renovación de Unidades de Oncología Infantil</h2>
+            <p>Hospital San Juan de Dios </p>
+            <p>Hospital de Concepción </p>
+            <p>Hospital San Borja Arriarán</p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="container-fluid row">
-    <div class="col-sm-6 col-md-2 col-md-offset-1">
-      <a href="#" class="thumbnail">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-1">
+      <div class="thumbnail">
         <img src="assets/img/features-img-3.jpg" alt="...">
-      </a>
+        <div class="caption">
+          <h2>Manual para Padres de niños Oncológicos</h2>
+          <p>Descargue este manual de información básica sobre la enfermedad, tratamiento, cuidados en el hogar y manejo del impacto de la enfermedad.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-      <h2>Manual para Padres de niños Oncológicos</h2>
-      <p>Descargue este manual de información básica sobre la enfermedad, tratamiento, cuidados en el hogar y manejo del impacto de la enfermedad.</p>
-    </div>
-    <div class="col-sm-6 col-md-2">
-      <a href="#" class="thumbnail">
+    <div class="col-sm-6 col-md-4 col-md-offset-2">
+      <div class="thumbnail">
         <img src="assets/img/features-img-4.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-sm-6 col-md-3">
-      <h2>Coronas de Caridad Fundación Niño y Cáncer</h2>
-          <p>Entregue condolencias los deudos a través de nuestras tarjetas.
-          Conozca los nuevos diseños.</p>
+        <div class="caption">
+          <h2>Coronas de Caridad Fundación Niño y Cáncer</h2>
+              <p>Entregue condolencias los deudos a través de nuestras tarjetas.
+              Conozca los nuevos diseños.</p>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <!-- 4.- Footer -->
   <footer class="container-fluid row">
@@ -146,15 +138,21 @@
       </div>
     </div>
     <div class="footer-fundacion-contact col-md-6 col-lg-6">
-      <ul>
-        <li><span>Dirección:</span> Tupungato 10070 Vitacura, Santiago de Chile</li>
-        <li><span>Teléfonos:</span> 22170821 - 22170811</li>
-        <li><span>Fax:</span> 22170820</li>
-        <li><span>Cta. Cte:</span> Banco BCI N° 85999997</li>
-        <li><span>RUT: </span>72.169.900-5</li>
-        <li><span>Email:</span> fundacion@ninoycancer.cl</li>
-      </ul>
-    </div>
+      <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nombre y apellido:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ingresa aquí tu nombre">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Consulta:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+    <button type="button" name="button" class="btn-fundacion">Enviar</button>
+</form>
   </div>
     </footer>
 

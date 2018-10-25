@@ -11,8 +11,24 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+.row {
+  margin: 0;
+}
+.title-hover {
+  width: 140px;
+  border: 4px solid #FF8F44;
+  margin-top: 0;
 
+}
 /* 1.- Navbar */
+.navbar {
+  z-index: 100;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .navbar-default {
   margin-bottom: 0;
   background-color: #008ccc;
@@ -51,10 +67,11 @@ h3 {
 /* 2.- Landing Page */
 .landing-fundacion {
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .carousel-inner {
   position: relative;
+  margin-bottom: 50px;
 }
 .carousel-inner-caption {
   position: absolute;
@@ -64,69 +81,27 @@ width: 100%;
 opacity: 0.7;
 min-height: 300px;
 }
-
-.carousel-caption h1 {
-  color: #0061aa;
-  text-shadow: 2px 2px #fff;
-  font-size: 4em;
-}
-.carousel-caption p {
-  color: #fff;
-  font-size: 1.5em;
-}
-.carousel-fundacion-caption {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
-  padding: 0 25px;
-  box-sizing: border-box;
-  top: 50px;
-  bottom: 160px;
-}
-.btn-fundacion {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  background-color: #0061aa;
-  border-radius: 2vh;
-  border: 1px solid #fff;
-  color: #fff;
-  width: 150px;
-  height: 30px;
-}
-/* Media Query Landing page */
-@media (max-width: 700px) {
-  .btn-fundacion {
-    margin-top: 0;
-    margin-bottom: 1vh;
-    background-color: #0061aa;
-    border-radius: 2vh;
-    border: 1px solid #fff;
-    color: #fff;
-    width: 100px;
-    height: 30px;
-    font-size: 0.8em;
-  }
-  .carousel-fundacion-caption {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 25px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    top: 5px;
-    bottom: 10px;
-  }
-  .carousel-caption h1 {
-    color: #0061aa;
-    text-shadow: 1px 1px #fff;
-    font-size: 1.6em;
-  }
-  .carousel-caption p {
-    color: #fff;
-    font-size: 1em;
-  }
- }
 /* Section 2*/
+.row {
+  text-align: center;
+}
+.row h1 {
+  font-size: 4em;
+  color: #0061aa;
+  margin-bottom: 5px;
+}
 .thumbnail {
-  width: 200px;
-  height: 200px;
+  height: 450px;
+}
+.thumbnail .caption {
+text-align: center;
+}
+.thumbnail .caption h2 {
+ color: #0061aa;
+ font-size: 2em;
+}
+.btn .btn-prymary img {
+  height: 10px;
 }
 .features-fundacion {
   text-align: center;
@@ -135,6 +110,7 @@ min-height: 300px;
   font-size: 3em;
   padding: 0;
 }
+/* Footer */
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -143,7 +119,7 @@ min-height: 300px;
   background: #0061aa;
 }
 .embed-responsive-item {
-  max-height: 300px;
+  max-height: 350px;
   box-sizing: border-box;
   padding: 30px;
 }
@@ -152,13 +128,98 @@ min-height: 300px;
 }
 .footer-fundacion-contact ul {
   list-style: none;
-  margin-top: 90px;
-  margin-left: 50px;
+  padding-top: 20px;
 }
-.footer-fundacion-contact ul li {
+.input-group {
+  width: 300px;
+}
+.input-group .input-group-lg .form-control{
+  height: 100px;
+}
+form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.btn-fundacion {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 2px solid white;
+  width: 100px;
   color: #fff;
-  font-size: 1.1em;
 }
-.footer-fundacion-contact ul li span {
+label {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+/* ABOUT PAGE */
+.about__inner_background {
+  background-image: url("../img/about-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-top: 60px;
+}
+.about__inner {
+  margin-top: 60px;
+  background-color: #0061aa;
+  height: 400px;
+}
+.about__inner h2 {
+  color: #fff;
+  font-size: 2em;
+  padding-top: 40px;
+  margin-top: 0;
+}
+.about__inner p {
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.about__inner_background_bottom {
+  background-image: url("../img/about-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.about__inner_bottom h2 {
+  color: #0061aa;
+  font-size: 2em;
+  padding-top: 40px;
+}
+.about__inner_bottom p {
+  color: #000;
+}
+.about__inner_bottom p span {
+  color: #000;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  color: #0061aa;
+}
+.about__inner_bottom ul li {
+list-style: none;
+}
+.about__inner_bottom ul {
+  padding-left: 0;
+}
+
+@media only screen and (max-width : 767px) {
+  .about__inner h2 {
+    font-size: 1.5em;
+    padding-left: 20px;
+  }
+
+  .about__inner_background {
+    height: 250px;
+  }
+  .about__inner_bottom h2 {
+    font-size: 1.5em;
+  }
+  .about__inner_background_bottom {
+    height: 250px;
+  }
 }
